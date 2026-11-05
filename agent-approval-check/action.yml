@@ -1,4 +1,5 @@
 name: Agent Approval Check
+author: step-security
 description: |
   Require N human approvals on PRs that contain agent-authored commits
   (Claude, Claude Code, or any configured bot identity). Posts an

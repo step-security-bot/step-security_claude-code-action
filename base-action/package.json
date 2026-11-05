@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@actions/core": "^2.0.3",
-    "@anthropic-ai/claude-agent-sdk": "0.3.283",
+    "@anthropic-ai/claude-agent-sdk": "^0.3.318",
     "axios": "^1.16.1",
     "shell-quote": "^1.8.4"
   },
   "devDependencies": {
-    "@types/bun": "1.2.11",
+    "@types/bun": "^1.4.3",
     "@types/node": "^20.19.41",
     "@types/shell-quote": "^1.7.5",
     "prettier": "3.5.3",

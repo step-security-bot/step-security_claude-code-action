@@ -1,0 +1,12 @@
+{
+  "$comment": "Managed automatically when syncing with upstream. Do not edit by hand.",
+  "schema_version": 1,
+  "onboarding_type": "copied",
+  "action_type": "composite",
+  "upstream": {
+    "repository": "anthropics/claude-code-action",
+    "synced_tag": "v1.0.268",
+    "synced_commit": "c0949c50a78c1ec8ce2647db36629b870e715d0c",
+    "archived": false
+  }
+}
