@@ -1,3 +1,7 @@
 [[IgnoredVulns]]
 id = "GHSA-frvp-7c67-39w9"
 reason = "@hono/node-server is a transitive dependency of @modelcontextprotocol/sdk used only for SSE/HTTP transport, not serve-static middleware; the vulnerability requires serve-static with prefix-mounted middleware guards which is not used anywhere; additionally Windows-only, this action runs on Linux GitHub Actions runners"
+
+[[IgnoredVulns]]
+id = "GHSA-mrhx-c7xc-m3w5"
+reason = "zod 3.x is pinned by this repo; the memory exhaustion needs a very large array of invalid elements validated against an unbounded array schema. The only array schemas are z.array(z.string()) for the commit_files/delete_files tools of a local stdio MCP server, whose input comes from Claude on an ephemeral GitHub Actions runner, not from untrusted network clients; the worst case is the MCP server process crashing. Upgrading to zod 4 is a major bump tracked separately"
